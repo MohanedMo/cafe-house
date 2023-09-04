@@ -1,0 +1,53 @@
+.booking {
+  padding-top: 150px;
+  background-color: var(--background-color);
+  padding-bottom: 60px;
+}
+.booking form {
+  padding: 60px 30px;
+  background-color: var(--main-color);
+}
+.booking form div {
+  height: 45px;
+  margin-top: 15px;
+}
+.booking form [type=text], .booking form [type=email], .booking form [type=tel] {
+  width: 95%;
+  outline: none;
+  border: none;
+}
+.booking form [type=text]::-webkit-input-placeholder, .booking form [type=email]::-webkit-input-placeholder, .booking form [type=tel]::-webkit-input-placeholder {
+  color: #000;
+}
+.booking form [type=text]::-moz-placeholder, .booking form [type=email]::-moz-placeholder, .booking form [type=tel]::-moz-placeholder {
+  color: #000;
+}
+.booking form [type=text]:-ms-input-placeholder, .booking form [type=email]:-ms-input-placeholder, .booking form [type=tel]:-ms-input-placeholder {
+  color: #000;
+}
+.booking form [type=text]::-ms-input-placeholder, .booking form [type=email]::-ms-input-placeholder, .booking form [type=tel]::-ms-input-placeholder {
+  color: #000;
+}
+.booking form [type=text]::placeholder, .booking form [type=email]::placeholder, .booking form [type=tel]::placeholder {
+  color: #000;
+}
+.booking form [type=time], .booking form [type=date] {
+  color: #000;
+  outline: none;
+}
+.booking form select {
+  outline: none;
+  border: none;
+  color: #000;
+}
+.booking form button {
+  height: 50px;
+  color: var(--main-color);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.booking form button:hover {
+  background-color: transparent;
+  color: #fff;
+}

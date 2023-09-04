@@ -1,0 +1,19 @@
+.drink {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.drink h3 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.drink:hover h3 {
+  color: var(--main-color);
+}
+.drink:hover span {
+  color: var(--main-color);
+}
+.drink img {
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,17 @@
+.admin{
+    padding: 100px 0;
+    background-color: var(--background-color);
+    z-index: 8;
+    h1{
+        color: var(--main-color);
+        font-family: var(--font-style);
+    }
+}
+form{
+    padding-top: 30px;
+    max-width: 300px;
+    label{
+        color: var(--main-color);
+        font-family: var(--font-style);
+    }
+}

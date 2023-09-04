@@ -1,0 +1,28 @@
+.brief {
+  background-color: var(--background-color);
+  padding-top: 250px;
+}
+.brief .container .d-flex .text {
+  max-width: 850px;
+}
+.brief .container .d-flex .text h3 {
+  font-family: var(--font-style);
+  color: var(--main-color);
+}
+.brief .container .d-flex .image {
+  position: relative;
+  background-image: url("../../../public/images/shadow.png");
+  background-repeat: no-repeat;
+  background-position-y: 165px;
+}
+.brief .container .d-flex .image img {
+  border-radius: 50%;
+  border: 10px solid var(--first-default-color);
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .brief .container .d-flex .image {
+    display: none;
+  }
+}

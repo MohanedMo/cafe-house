@@ -1,0 +1,149 @@
+.main {
+    background-color: var(--section-background-color);
+    .container{
+        position: relative;
+        top: 70px;
+  .images {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    img{
+        max-width: 250px;
+    }
+  }
+  .details {
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    top: 120px;
+    h2 {
+      text-align: center;
+      font-size: 60px;
+    }
+    .title {
+      font-family: var(--font-style);
+      position: relative;
+      width: fit-content;
+      margin: auto;
+      &:before {
+        content: "";
+        background-image: url("../../../public/images/header-line.png");
+        position: absolute;
+        width: 66px;
+        height: 5px;
+        top: 45px;
+        left: -75px;
+        box-shadow: -1px 3px 4px #000;
+      }
+      &:after {
+        content: "";
+        background-image: url("../../../public/images/header-line.png");
+        position: absolute;
+        width: 66px;
+        height: 5px;
+        top: 45px;
+        right: -100px;
+        box-shadow: -1px 3px 4px #000;
+      }
+    }
+    .cafe {
+      color: var(--main-color);
+      font-family: "Times New Roman", serif;
+      margin: 15px;
+    }
+    p {
+      color: var(--third-color);
+      line-height: 1.4;
+      font-size: 15px;
+    }
+    .btn {
+      margin: 40px auto;
+      
+    }
+  }
+  .table {
+    position: relative;
+    bottom: -100px;
+    max-width: 100%;
+  }
+}
+}
+
+@media (max-width: 767px) {
+  .main {
+    .container {
+      .images {
+        img:not(:first-child) {
+          display: none;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+
+    .main {
+        .container {
+  .details {
+    .title {
+      font-size: 25px;
+
+      &:before {
+        width: 25px;
+        top: 11px;
+        left: -41px;
+      }
+      &:after {
+        width: 25px ;
+        top: 11px;
+        right: -41px;
+      }
+    }
+    .cafe{
+        font-size: 25px;
+    }
+  }
+}
+}
+}
+
+@media (max-width: 767px) {
+  .main {
+    .container {
+      .images {
+        img:not(:first-child) {
+          display: none;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 300px) {
+
+    .main {
+        .container {
+          .images{
+            img{
+              width: 130px;
+              position: absolute;
+              top: 25px;
+            }
+          }
+          .details {
+            .title {
+              &:before {
+                content: none;
+              }
+              &:after {
+                content: none;
+              }
+            }
+        }
+}
+    }
+  }

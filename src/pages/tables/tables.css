@@ -1,0 +1,17 @@
+.tables {
+  padding: 100px 0;
+  background-color: var(--background-color);
+}
+.tables h1 {
+  font-family: var(--font-style);
+  color: var(--main-color);
+}
+.tables .table th {
+  background-color: var(--main-color);
+}
+.tables .table td {
+  background-color: var(--background-color);
+}
+.tables .table i {
+  cursor: pointer;
+}

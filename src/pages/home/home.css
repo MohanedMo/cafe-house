@@ -1,0 +1,16 @@
+.cards {
+  background-color: var(--background-color);
+}
+
+.special-home {
+  background-color: var(--background-color);
+}
+.special-home .photo {
+  border: 10px solid var(--first-default-color);
+}
+.special-home .container .text {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.special-home .container .col-5 .small-images {
+  margin-top: 40px;
+}

@@ -1,0 +1,52 @@
+.card {
+  margin-bottom: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  max-width: 295px;
+}
+.card img {
+  max-height: 200px;
+}
+.card:hover {
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.card:hover .card-body .card-title {
+  color: var(--main-color);
+  border-bottom-color: var(--main-color);
+}
+.card:hover .card-body .price {
+  color: var(--main-color);
+}
+.card:hover .card-body .price::before {
+  border-color: var(--main-color);
+}
+.card .card-body {
+  position: relative;
+}
+.card .card-body .card-title {
+  font-family: var(--font-style);
+  color: var(--third-color);
+  border-bottom: 1px solid var(--third-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card .card-body .card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom: 65px;
+}
+.card .card-body .price {
+  margin-top: 20px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 190px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  line-height: 2.5;
+}

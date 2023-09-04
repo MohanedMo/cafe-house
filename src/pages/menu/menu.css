@@ -1,0 +1,28 @@
+.menu-content {
+  background-color: var(--background-color);
+}
+.menu-content .menu-image {
+  max-width: 245px;
+  max-height: 395px;
+}
+.menu-content .menu-image .drinks {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+.menu-content .menu-image .drinks li {
+  margin-top: 10px;
+}
+.menu-content .menu-image .drinks li a {
+  text-decoration: none;
+  color: #7c6a51;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu-content .menu-image .drinks li a:hover {
+  color: var(--main-color);
+}
+.menu-content .menu-image .drinks li a:focus {
+  color: var(--main-color);
+}

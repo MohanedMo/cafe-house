@@ -1,0 +1,50 @@
+.card{
+    margin-bottom: 100px;
+    transition: 0.3s;
+    max-width: 295px;
+    img{
+        max-height: 200px;
+    }
+    &:hover{
+        box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
+        .card-body{
+            .card-title{
+                color: var(--main-color);
+                border-bottom-color: var(--main-color);
+            }
+            .price{
+                color: var(--main-color);
+                &::before{
+                    border-color: var(--main-color);
+                }
+            }
+        }
+    }
+    .card-body{
+        position: relative;
+        .card-title{
+            font-family: var(--font-style);
+            color: var(--third-color);
+            border-bottom: 1px solid var(--third-color);
+            transition: 0.3s;
+        }
+        .card-text{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; 
+            line-clamp: 4; 
+            -webkit-box-orient: vertical;
+            margin-bottom: 65px;
+        }
+        .price{
+    margin-top: 20px;
+    position: absolute;
+    transition: 0.3s;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 2.5;
+}
+            }
+}
+

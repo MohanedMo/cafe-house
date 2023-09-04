@@ -1,0 +1,25 @@
+.footer{
+    padding: 40px 0 ;
+    background-color: var(--footer-background-color);
+    ul{
+        list-style-type: none;
+        li {
+            a{
+                transition: 0.3s;
+                &:hover{
+                    color: var(--main-color)
+                }
+            }
+            .active{
+                color: var(--main-color);
+            }
+        }
+    }
+    .link{
+        background-color: var(--btn-background-color);
+        transition: 0.3s;
+        &:hover{
+            background-color: var(--main-color);
+        }
+    }
+}

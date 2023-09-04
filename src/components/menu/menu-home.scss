@@ -1,0 +1,14 @@
+.menu-home{
+    background-color: var(--background-color);
+    padding-bottom: 40px;
+    p{
+        font-size: 14px;
+    }
+    li{
+        font-size: 14px;
+        &::marker{
+            color: var(--main-color);
+            font-weight: bold;
+        }
+    }
+}

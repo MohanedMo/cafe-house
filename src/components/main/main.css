@@ -1,0 +1,123 @@
+.main {
+  background-color: var(--section-background-color);
+}
+.main .container {
+  position: relative;
+  top: 70px;
+}
+.main .container .images {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+.main .container .images img {
+  max-width: 250px;
+}
+.main .container .details {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  top: 120px;
+}
+.main .container .details h2 {
+  text-align: center;
+  font-size: 60px;
+}
+.main .container .details .title {
+  font-family: var(--font-style);
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.main .container .details .title:before {
+  content: "";
+  background-image: url("../../../public/images/header-line.png");
+  position: absolute;
+  width: 66px;
+  height: 5px;
+  top: 45px;
+  left: -75px;
+  -webkit-box-shadow: -1px 3px 4px #000;
+          box-shadow: -1px 3px 4px #000;
+}
+.main .container .details .title:after {
+  content: "";
+  background-image: url("../../../public/images/header-line.png");
+  position: absolute;
+  width: 66px;
+  height: 5px;
+  top: 45px;
+  right: -100px;
+  -webkit-box-shadow: -1px 3px 4px #000;
+          box-shadow: -1px 3px 4px #000;
+}
+.main .container .details .cafe {
+  color: var(--main-color);
+  font-family: "Times New Roman", serif;
+  margin: 15px;
+}
+.main .container .details p {
+  color: var(--third-color);
+  line-height: 1.4;
+  font-size: 15px;
+}
+.main .container .details .btn {
+  margin: 40px auto;
+}
+.main .container .table {
+  position: relative;
+  bottom: -100px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .main .container .images img:not(:first-child) {
+    display: none;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 540px) {
+  .main .container .details .title {
+    font-size: 25px;
+  }
+  .main .container .details .title:before {
+    width: 25px;
+    top: 11px;
+    left: -41px;
+  }
+  .main .container .details .title:after {
+    width: 25px;
+    top: 11px;
+    right: -41px;
+  }
+  .main .container .details .cafe {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .main .container .images img:not(:first-child) {
+    display: none;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 300px) {
+  .main .container .images img {
+    width: 130px;
+    position: absolute;
+    top: 25px;
+  }
+  .main .container .details .title:before {
+    content: none;
+  }
+  .main .container .details .title:after {
+    content: none;
+  }
+}

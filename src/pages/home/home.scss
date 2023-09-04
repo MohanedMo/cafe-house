@@ -1,0 +1,21 @@
+.cards{
+    background-color: var(--background-color);
+    padding-bottom: 50px;
+}
+.special-home{
+    background-color: var(--background-color);
+    .photo{
+        border: 10px solid var(--first-default-color)
+    }
+    .container{
+        .text{
+            background-color: rgba( 0,0,0, 0.7);
+        }
+        .col-5{
+            .small-images{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
